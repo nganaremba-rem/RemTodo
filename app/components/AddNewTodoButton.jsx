@@ -1,14 +1,6 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Button,
-  Modal,
-  Pressable,
-  TouchableWithoutFeedback,
-} from "react-native";
-import React, { useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
+import React, { useState } from "react";
+import { TouchableOpacity, View } from "react-native";
 import { colors } from "../assets/colors";
 
 const AddNewTodoButton = ({ navigation }) => {

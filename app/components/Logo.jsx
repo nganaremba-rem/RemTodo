@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
-import React from "react";
 import { AntDesign } from "@expo/vector-icons";
+import React from "react";
+import { Text, View } from "react-native";
 import { colors } from "../assets/colors";
 
 const Logo = () => {

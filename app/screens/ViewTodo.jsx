@@ -1,21 +1,18 @@
+import { Entypo, Feather, MaterialIcons } from "@expo/vector-icons";
+import React, { useEffect, useState } from "react";
 import {
-  View,
-  Text,
+  ActivityIndicator,
+  Alert,
   ScrollView,
+  Text,
   TextInput,
   TouchableOpacity,
-  Alert,
-  ActivityIndicator,
-  Modal,
+  View,
 } from "react-native";
-import React, { useEffect, useState } from "react";
-import Logo from "../components/Logo";
-import { MaterialIcons } from "@expo/vector-icons";
-import { Entypo } from "@expo/vector-icons";
-import { Feather } from "@expo/vector-icons";
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import { deleteTodo, getTodoById, updateTodo } from "../api/api";
 import CustomActivityIndication from "../components/CustomActivityIndication";
+import Logo from "../components/Logo";
 
 const ViewTodo = ({ route, navigation }) => {
   // const { todos } = useStateContext();

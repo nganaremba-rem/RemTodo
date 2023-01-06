@@ -1,16 +1,9 @@
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  ActivityIndicator,
-} from "react-native";
-import React, { useEffect, useRef, useState } from "react";
-import { colors } from "../assets/colors";
-import useStateContext from "../hooks/useStateContext";
-import TodoCard from "./TodoCard";
+import React, { useEffect, useRef } from "react";
+import { ActivityIndicator, FlatList, Text, View } from "react-native";
 import { useQuery } from "react-query";
 import { getTodos } from "../api/api";
+import useStateContext from "../hooks/useStateContext";
+import TodoCard from "./TodoCard";
 
 const Categories = ({ navigation }) => {
   const { todoWithSearch, setTodoWithSearch, setTodos } = useStateContext();

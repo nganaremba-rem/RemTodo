@@ -1,10 +1,9 @@
-import { View, Text, TextInput, Button, ActivityIndicator } from "react-native";
 import React, { useState } from "react";
-import Logo from "../components/Logo";
-import { colors } from "../assets/colors";
-import useStateContext from "../hooks/useStateContext";
+import { ActivityIndicator, Button, Text, TextInput, View } from "react-native";
 import { useMutation, useQueryClient } from "react-query";
 import { createTodo } from "../api/api";
+import { colors } from "../assets/colors";
+import Logo from "../components/Logo";
 
 const CreateTodo = ({ navigation }) => {
   const queryClient = useQueryClient();

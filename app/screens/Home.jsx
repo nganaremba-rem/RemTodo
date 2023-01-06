@@ -1,17 +1,9 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  TouchableOpacity,
-  TextInput,
-} from "react-native";
 import React from "react";
-import { colors } from "../assets/colors";
-import { AntDesign, Ionicons } from "@expo/vector-icons";
-import Search from "../components/Search";
-import Logo from "../components/Logo";
+import { SafeAreaView } from "react-native";
 import AddNewTodoButton from "../components/AddNewTodoButton";
 import Categories from "../components/Categories";
+import Logo from "../components/Logo";
+import Search from "../components/Search";
 
 const Home = ({ navigation }) => {
   return (
